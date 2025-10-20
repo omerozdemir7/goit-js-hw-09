@@ -5,11 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ÖDEV 9</title>
     <link rel="stylesheet" href="./src/css/style.css" />
-    <link rel="shortcut icon" href="./src/9.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/9.png" type="image/x-icon" />
+
+    <!-- ✅ Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-sV8KJmqEttScwMrl1bqIhtpUvl0t3cHUNtqgQkST1+6Yk5lbxXl4YpQ+T8QZ9V0kGZPk0mHDmUGMFD7FqvN7vQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <style>
       /* 🌟 Basit modern stil */
       body {
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         background: linear-gradient(135deg, #f0f4f8, #e8ecf1);
         display: flex;
         flex-direction: column;
@@ -42,7 +52,12 @@
         border-radius: 8px;
         font-size: 1rem;
         font-weight: 500;
-        transition: background-color 0.3s ease, transform 0.2s ease;
+        transition:
+          background-color 0.3s ease,
+          transform 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 8px;
       }
 
       .link-container a:hover {
@@ -53,17 +68,23 @@
       .link-container a:active {
         transform: translateY(0);
       }
+
+      /* 🎨 İkon stili */
+      .link-container i {
+        font-size: 1.1rem;
+      }
     </style>
   </head>
+
   <body>
     <h1>ÖDEV 9</h1>
     <div class="link-container">
-      <a href="/goit-js-hw-09/01-gallery.html">📸 Galeri Görevi</a>
-<a href="/goit-js-hw-09/02-form.html">💬 Form Görevi</a>
-
+      <a href="/goit-js-hw-09/01-gallery.html">
+        <i class="fa-solid fa-camera"></i> Galeri Görevi
+      </a>
+      <a href="/goit-js-hw-09/02-form.html">
+        <i class="fa-solid fa-comments"></i> Form Görevi
+      </a>
     </div>
-
-   
-    
   </body>
 </html>
